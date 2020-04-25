@@ -1,0 +1,14 @@
+create databse prova;
+
+use prova;
+
+CREATE TABLE cliente(
+	id int not null AUTO_INCREMENT PRIMARY key,
+    nome varchar(100) not null,
+    apelido varchar(100) not null,
+    telefone varchar(20) not null,
+    celular varchar(20) not null,
+    cep varchar(15) not null,
+    categoria enum ('A', 'B', 'C') not null,
+    desconto enum ('5%', '15%', '25%') not null
+);
